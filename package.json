@@ -1,0 +1,19 @@
+{
+  "name": "ease-tweening",
+  "version": "0.0.4",
+  "description": "a light lib of tweening",
+  "main": "./dist/tweening.js",
+  "scripts": {
+    "build": "npx rollup index.js --format cjs --file dist/tweening.js",
+    "test": "npx jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.4.0",
+    "rollup": "^2.7.2"
+  },
+  "dependencies": {
+    "fn-name": "^3.0.0"
+  }
+}
