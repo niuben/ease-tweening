@@ -1,13 +1,16 @@
 {
   "name": "ease-tweening",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "a light lib of tweening",
   "main": "./dist/tweening.js",
   "scripts": {
     "build": "npx rollup index.js --format cjs --file dist/tweening.js",
     "test": "npx jest"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niuben/ease-tweening"
+  },
   "license": "ISC",
   "devDependencies": {
     "jest": "^25.4.0",
