@@ -1,6 +1,3 @@
-/**
- * 
- * */ 
 import {easeIn, easeOut, easeInOut, linear} from "./lib/curve";
 import {createDuration} from "./lib/time";
 import fnName from "fn-name";
@@ -12,6 +9,7 @@ function _create(easeFun){
         }, option);
 
         const timer = createDuration();
+                
         var handle = setInterval(() => {
             var percent = easeFun(timer() / duration);            
             if (timer() >= duration){

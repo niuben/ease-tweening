@@ -1,7 +1,8 @@
 var easeTweening = require("../dist/tweening");
 
-test("test tweening object", (done)=>{    
-            
+
+
+test("test tweening object", (done)=>{                
     easeTweening.easeInOut({
         from: 0.1,
         to: 1,

@@ -1,6 +1,6 @@
 {
   "name": "ease-tweening",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "a light lib of tweening",
   "main": "./dist/tweening.js",
   "scripts": {
@@ -18,5 +18,8 @@
   },
   "dependencies": {
     "fn-name": "^3.0.0"
-  }
+  },
+  "keywords": [
+    "ease", "easeIn", "easeInOut", "easeInOut", "tween"
+  ]
 }

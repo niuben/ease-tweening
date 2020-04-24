@@ -1,6 +1,8 @@
 # Ease-Tweening
 a light lib of tweening
 
+![Node.js CI](https://github.com/niuben/ease-tweening/workflows/Node.js%20CI/badge.svg)
+
 ## API
 
 create tweening
