@@ -1,6 +1,5 @@
-import {easeIn, easeOut, easeInOut, linear} from "./lib/curve";
 import {createDuration} from "./lib/time";
-import fnName from "fn-name";
+var tweenFunctions = require("tween-functions");
 
 function _create(easeFun){
     return function(option){
@@ -11,20 +10,53 @@ function _create(easeFun){
         const timer = createDuration();
                 
         var handle = setInterval(() => {
-            var percent = easeFun(timer() / duration);            
-            if (timer() >= duration){
+            
+            var time = timer();
+                        
+            var passingValue = tweenFunctions[easeFun](time, to, from, duration);            
+            if (time >= duration){
                 clearInterval(handle);
-                percent = 1;
+                passingValue = to;
             }
-            onUpdate && onUpdate(from + (to - from) * percent, percent);
-            percent == 1 && onEnd && onEnd(from);
+            onUpdate && onUpdate(passingValue, time / duration);
+            percent == 1 && onEnd && onEnd(to);
         }, 30);
     }
 }
 
 var tweening = {};
-[easeIn, easeOut, easeInOut, linear].map((easeFun)=>{
-    tweening[fnName(easeFun)] = _create(easeFun);
+["linear",
+"easeInQuad",
+"easeInCubic",
+"easeInQuart",
+"easeInQuint",
+"easeInSine",
+"easeInExpo",
+"easeInCirc",
+"easeInBounce",
+"easeInElastic",
+"easeInBack",
+"easeOutQuad",
+"easeOutCubic",
+"easeOutQuart",
+"easeOutQuint",
+"easeOutSine",
+"easeOutExpo",
+"easeOutCirc",
+"easeOutBounce",
+"easeOutElastic",
+"easeOutBack",
+"easeInOutQuad",
+"easeInOutCubic",
+"easeInOutQuart",
+"easeInOutQuint",
+"easeInOutSine",
+"easeInOutExpo",
+"easeInOutCirc",
+"easeInOutBounce",
+"easeInOutElastic",
+"easeInOutBack"].map((easeFun)=>{
+    tweening[easeFun] = _create(easeFun);
 });
 
 export default tweening;

@@ -13,13 +13,21 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
     "jest": "^25.4.0",
     "rollup": "^2.7.2"
   },
   "dependencies": {
-    "fn-name": "^3.0.0"
+    "fn-name": "^3.0.0",
+    "tween-functions": "^1.2.0"
   },
   "keywords": [
-    "ease", "easeIn", "easeInOut", "easeInOut", "tween"
+    "ease",
+    "easeIn",
+    "easeInOut",
+    "easeInOut",
+    "tween"
   ]
 }

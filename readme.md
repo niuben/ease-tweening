@@ -33,7 +33,36 @@ var easeInTween = easeTweening.easeIn({
 
 list of easeName
 
-- easeIn
-- easeOut
-- easeInOut
 - linear
+- easeInQuad
+- easeInCubic
+- easeInQuart
+- easeInQuint
+- easeInSine
+- easeInExpo
+- easeInCirc
+- easeInBounce
+- easeInElastic
+- easeInBack
+- easeOutQuad
+- easeOutCubic
+- easeOutQuart
+- easeOutQuint
+- easeOutSine
+- easeOutExpo
+- easeOutCirc
+- easeOutBounce
+- easeOutElastic
+- easeOutBack
+- easeInOutQuad
+- easeInOutCubic
+- easeInOutQuart
+- easeInOutQuint
+- easeInOutSine
+- easeInOutExpo
+- easeInOutCirc
+- easeInOutBounce
+- easeInOutElastic
+- easeInOutBack
+
+thanks to [tween-functions](https://www.npmjs.com/package/tween-functions)
