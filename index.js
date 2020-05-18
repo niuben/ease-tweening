@@ -1,5 +1,5 @@
 import {createDuration} from "./lib/time";
-var tweenFunctions = require("tween-functions");
+import tweenFunctions from "tween-functions";
 
 function _create(easeFun){
     return function(option){
@@ -12,14 +12,17 @@ function _create(easeFun){
         var handle = setInterval(() => {
             
             var time = timer();
-                        
-            var passingValue = tweenFunctions[easeFun](time, to, from, duration);            
+            var percent = time / duration;
+
+            var passingValue = tweenFunctions[easeFun](time, from, to, duration);            
             if (time >= duration){
                 clearInterval(handle);
                 passingValue = to;
-            }
-            onUpdate && onUpdate(passingValue, time / duration);
-            percent == 1 && onEnd && onEnd(to);
+                percent = 1;
+                onEnd && onEnd(passingValue, percent);
+                return;
+            }            
+            onUpdate && onUpdate(passingValue, percent);             
         }, 30);
     }
 }

@@ -1,14 +1,14 @@
-var easeTweening = require("../dist/tweening");
+var easeTweening = require("../build/index");
 
 test("test tweening object", (done)=>{                
-    easeTweening.easeInOut({
-        from: 0.1,
+    easeTweening.linear({
+        from: 0,
         to: 1,
         duration: 4000,
         onUpdate: (data, percent)=>{        
             console.log(data);
             try {
-                expect(data).toBe(0.1 + (1 - 0.1)*percent);            
+                expect(data).toBe(0.1 + (1 - 0.1) * percent);            
             } catch (error) {            
     
             }            

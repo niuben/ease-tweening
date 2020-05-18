@@ -1,33 +1,28 @@
 {
-  "name": "ease-tweening",
-  "version": "0.0.6",
-  "description": "a light lib of tweening",
-  "main": "./dist/tweening.js",
+  "name": "masker_ad2",
+  "version": "1.0.0",
+  "main": "./build/index.js",
+  "license": "MIT",
   "scripts": {
-    "build": "npx rollup index.js --format cjs --file dist/tweening.js",
-    "test": "npx jest"
+    "dev": "rollup -c -w --environment NODE_ENV:dev",
+    "build": "rollup -c --environment NODE_ENV:build",
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/niuben/ease-tweening"
-  },
-  "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/node": "^7.8.7",
-    "@babel/preset-env": "^7.9.6",
-    "jest": "^25.4.0",
-    "rollup": "^2.7.2"
+    "asciichart": "^1.5.19",
+    "fs-extra": "^4.0.2",
+    "jest": "^25.0.0",
+    "jquery": "3.3.1",
+    "rollup": "^1.0.0",
+    "rollup-plugin-buble": "^0.17.0",
+    "rollup-plugin-collect-sass": "^1.0.9",
+    "rollup-plugin-jscc": "^0.3.3",
+    "rollup-plugin-node-resolve": "^5.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "shell-deploy": "^0.0.11"
   },
   "dependencies": {
-    "fn-name": "^3.0.0",
+    "rollup-plugin-commonjs": "^10.1.0",
     "tween-functions": "^1.2.0"
-  },
-  "keywords": [
-    "ease",
-    "easeIn",
-    "easeInOut",
-    "easeInOut",
-    "tween"
-  ]
+  }
 }
