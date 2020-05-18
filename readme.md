@@ -1,4 +1,4 @@
-# Ease-Tweening
+# ease-tweening
 a light lib of tweening
 
 ![Node.js CI](https://github.com/niuben/ease-tweening/workflows/Node.js%20CI/badge.svg)

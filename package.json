@@ -1,6 +1,6 @@
 {
-  "name": "masker_ad2",
-  "version": "1.0.0",
+  "name": "ease-tweening",
+  "version": "0.0.7",
   "main": "./build/index.js",
   "license": "MIT",
   "scripts": {
