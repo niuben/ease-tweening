@@ -1,5 +1,4 @@
 var easeTweening = require("../build/index");
-var asciichart = require("asciichart");
 var funs = ["linear",
 "easeInQuad",
 "easeInCubic",
@@ -48,7 +47,7 @@ test("test easeInQuad function", (done)=>{
         },
         onEnd: function(data, percent){                
             // s0.push(data);
-            // console.log(asciichart.plot(s0));
+            
             s0.push([percent, data]);
             console.dir(s0);
             expect(data).toBe(1 * percent);
