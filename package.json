@@ -1,12 +1,16 @@
 {
   "name": "ease-tweening",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "main": "./build/index.js",
   "license": "MIT",
   "scripts": {
     "dev": "rollup -c -w --environment NODE_ENV:dev",
     "build": "rollup -c --environment NODE_ENV:build",
     "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niuben/ease-tweening" 
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
