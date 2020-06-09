@@ -65,7 +65,7 @@ list of easeName
 - easeInOutElastic
 - easeInOutBack
 
-thanks to [tween-functions](https://www.npmjs.com/package/tween-functions)
+Thanks for [tween-functions](https://www.npmjs.com/package/tween-functions)
 
 ![曲线](https://niuben.github.io/ease-tweening/demo/download.png)
 
